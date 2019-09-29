@@ -110,7 +110,7 @@ def highlight_important(textFilename, inDocxFilename, outDocxFilename):
             for start in find_occurances_in_paragraph(paragraph, search):
                 apply_format_to_range(paragraph, start, start + len(search), format_func)
     doc.save(outDocxFilename)
-    print(sentences)
+    #print(sentences)
     textFile.close()
 
 #Main function below
